@@ -9,7 +9,7 @@ library_path = library_directory.joinpath('liblibrary_example.dylib')
 if not library_path.exists():
     library_path = library_directory.joinpath('liblibrary_example.so')
 if not library_path.exists():
-    library_path = library_directory.joinpath('liblibrary_example.dll')
+    library_path = library_directory.joinpath('library_example.dll')
 if not library_path.exists():
     raise FileNotFoundError(errno.ENOENT, os.strerror(errno.ENOENT),
                             str(library_path.absolute().stem) + '.(dylib|so|dll)')

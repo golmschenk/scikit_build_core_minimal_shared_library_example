@@ -13,5 +13,5 @@ build-backend = "scikit_build_core.build"
 [tool.cibuildwheel]
 build = "cp310-*"
 build-verbosity = "3"
-#test-requires = ["pytest==7.2.1"]
-#test-command = "pytest {package}/tests"
+test-requires = ["pytest==7.2.1"]
+test-command = "pytest {package}/tests"
