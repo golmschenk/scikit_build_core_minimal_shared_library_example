@@ -2,9 +2,6 @@
 name = "scikit_build_core_minimal_shared_library_example"
 version = "0.1.0"
 requires-python = ">=3.10"
-packages = [
-    { include = "tests" }
-]
 
 [build-system]
 requires = ["scikit-build-core"]
@@ -15,6 +12,3 @@ build = "cp310-*"
 build-verbosity = "3"
 test-requires = ["pytest==7.2.1"]
 test-command = "pytest {package}/tests"
-
-[tool.cibuildwheel.windows]
-archs = ["auto64"]
